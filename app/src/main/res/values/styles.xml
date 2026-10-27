@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Título grande (estilo "Large Title" do iOS) -->
+    <style name="Text.Project2.LargeTitle" parent="">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/label</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Text.Project2.Subtitle" parent="">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/secondary_label</item>
+    </style>
+
+    <!-- Cabeçalho de seção em cinza, acima dos cartões -->
+    <style name="Text.Project2.SectionHeader" parent="">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/secondary_label</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="Text.Project2.Body" parent="">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/label</item>
+    </style>
+
+    <!-- Campo de texto sem sublinhado, dentro de um cartão -->
+    <style name="Widget.Project2.Field" parent="">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/label</item>
+        <item name="android:textColorHint">@color/placeholder</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Botão principal azul com cantos arredondados -->
+    <style name="Widget.Project2.Button" parent="Widget.Material3.Button">
+        <item name="android:layout_height">54dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="backgroundTint">@color/accent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Botão só com texto -->
+    <style name="Widget.Project2.TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Opção do controle segmentado (Masculino/Feminino) -->
+    <style name="Widget.Project2.Segment" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/bg_segment_option</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/label</item>
+    </style>
+
+    <!-- Linha divisória entre campos de um mesmo cartão -->
+    <style name="Widget.Project2.Divider" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:background">@color/separator</item>
+    </style>
+
+    <!-- Linha clicável de uma lista dentro de um cartão -->
+    <style name="Widget.Project2.Row" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Ícone branco em quadrado colorido, à esquerda da linha -->
+    <style name="Widget.Project2.RowIcon" parent="">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/bg_icone</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <!-- Seta ">" no fim da linha -->
+    <style name="Widget.Project2.RowChevron" parent="">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/ic_seta</item>
+        <item name="tint">@color/placeholder</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <!-- Divisória que começa depois do ícone da linha -->
+    <style name="Widget.Project2.Divider.Inset" parent="Widget.Project2.Divider">
+        <item name="android:layout_marginStart">60dp</item>
+    </style>
+
+    <!-- Menu inferior flutuante, escuro e arredondado -->
+    <style name="Widget.Project2.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@drawable/bg_menu</item>
+        <item name="android:elevation">12dp</item>
+        <item name="itemIconTint">@color/nav_item</item>
+        <item name="itemTextColor">@color/nav_item</item>
+        <item name="itemPaddingTop">8dp</item>
+        <item name="itemPaddingBottom">10dp</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.Project2.BottomNav.Indicator</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <!-- Pílula azul atrás do ícone selecionado -->
+    <style name="Widget.Project2.BottomNav.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/accent</item>
+    </style>
+
+    <!-- Pop-up de detalhes do histórico -->
+    <style name="Popup" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.45</item>
+        <item name="android:windowAnimationStyle">@style/Popup.Animacao</item>
+    </style>
+
+    <style name="Popup.Animacao" parent="">
+        <item name="android:windowEnterAnimation">@anim/popup_entrar</item>
+        <item name="android:windowExitAnimation">@anim/popup_sair</item>
+    </style>
+
+</resources>

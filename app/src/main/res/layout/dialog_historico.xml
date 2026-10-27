@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pop-up com os detalhes de um cálculo do histórico -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/bg_popup">
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="14dp"
+        android:background="@drawable/bg_avatar"
+        android:src="@drawable/ic_historico"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/Valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/accent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:text="1680 kcal" />
+
+    <TextView
+        android:id="@+id/Descricao"
+        style="@style/Text.Project2.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Feminino · 26/10/2026 às 14:30" />
+
+    <TextView
+        style="@style/Text.Project2.SectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
+        android:text="O que fazer" />
+
+    <!-- Preenchido pelo código com item_passo -->
+    <LinearLayout
+        android:id="@+id/Passos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/Fechar"
+        style="@style/Widget.Project2.Button"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="Entendi" />
+
+</LinearLayout>

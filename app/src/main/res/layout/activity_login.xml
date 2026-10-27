@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="32dp">
+
+        <!-- Ícone do app -->
+        <FrameLayout
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:background="@drawable/bg_app_icon">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_lock"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Text.Project2.LargeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Bem-vindo" />
+
+        <TextView
+            style="@style/Text.Project2.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Entre com sua conta para continuar" />
+
+        <!-- Cartão com os campos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card">
+
+            <EditText
+                android:id="@+id/editEmail"
+                style="@style/Widget.Project2.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:autofillHints="emailAddress"
+                android:inputType="textEmailAddress" />
+
+            <View style="@style/Widget.Project2.Divider" />
+
+            <EditText
+                android:id="@+id/editSenha"
+                style="@style/Widget.Project2.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:autofillHints="password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/Widget.Project2.Button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="28dp"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            style="@style/Widget.Project2.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Criar conta" />
+
+    </LinearLayout>
+
+</ScrollView>

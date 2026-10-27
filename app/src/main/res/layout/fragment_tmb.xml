@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Rolagem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="@dimen/espaco_menu">
+
+        <TextView
+            style="@style/Text.Project2.LargeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metabolismo" />
+
+        <TextView
+            style="@style/Text.Project2.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Calcule sua Taxa Metabólica Basal" />
+
+        <!-- ==========================
+             DADOS
+             ========================== -->
+
+        <TextView
+            style="@style/Text.Project2.SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seus dados" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card">
+
+            <!-- Peso -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Peso" />
+
+                <EditText
+                    android:id="@+id/Peso"
+                    style="@style/Widget.Project2.Field"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="6dp"
+                    android:gravity="end|center_vertical"
+                    android:hint="70"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary_label"
+                    android:text="kg" />
+            </LinearLayout>
+
+            <View style="@style/Widget.Project2.Divider" />
+
+            <!-- Altura -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Altura" />
+
+                <EditText
+                    android:id="@+id/Altura"
+                    style="@style/Widget.Project2.Field"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="6dp"
+                    android:gravity="end|center_vertical"
+                    android:hint="170"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary_label"
+                    android:text="cm" />
+            </LinearLayout>
+
+            <View style="@style/Widget.Project2.Divider" />
+
+            <!-- Idade -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Idade" />
+
+                <EditText
+                    android:id="@+id/Idade"
+                    style="@style/Widget.Project2.Field"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="6dp"
+                    android:gravity="end|center_vertical"
+                    android:hint="25"
+                    android:importantForAutofill="no"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary_label"
+                    android:text="anos" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ==========================
+             SEXO (controle segmentado)
+             ========================== -->
+
+        <TextView
+            style="@style/Text.Project2.SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Sexo" />
+
+        <RadioGroup
+            android:id="@+id/Sexo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="@drawable/bg_segment"
+            android:checkedButton="@id/Masculino">
+
+            <RadioButton
+                android:id="@+id/Masculino"
+                style="@style/Widget.Project2.Segment"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/Feminino"
+                style="@style/Widget.Project2.Segment"
+                android:text="Feminino" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/Calcular"
+            style="@style/Widget.Project2.Button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:text="Calcular" />
+
+        <!-- ==========================
+             RESULTADO
+             ========================== -->
+
+        <LinearLayout
+            android:id="@+id/CardResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:background="@drawable/bg_card"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/Text.Project2.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sua taxa metabólica basal" />
+
+            <TextView
+                android:id="@+id/Resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="52sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent"
+                tools:text="1680" />
+
+            <TextView
+                style="@style/Text.Project2.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kcal por dia" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

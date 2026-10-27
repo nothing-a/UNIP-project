@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="@dimen/espaco_menu">
+
+        <TextView
+            style="@style/Text.Project2.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bem-vindo(a) de volta" />
+
+        <TextView
+            android:id="@+id/Saudacao"
+            style="@style/Text.Project2.LargeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Olá, Sophia" />
+
+        <!-- ==========================
+             CARTÃO DO USUÁRIO
+             ========================== -->
+
+        <LinearLayout
+            android:id="@+id/CardUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_card">
+
+            <TextView
+                android:id="@+id/Avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_avatar"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="SC" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Nome"
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="19sp"
+                    tools:text="Sophia Costa" />
+
+                <TextView
+                    android:id="@+id/Email"
+                    style="@style/Text.Project2.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    tools:text="sophia.costa@email.com" />
+            </LinearLayout>
+
+            <ImageView style="@style/Widget.Project2.RowChevron" />
+        </LinearLayout>
+
+        <!-- ==========================
+             RESUMO
+             ========================== -->
+
+        <TextView
+            style="@style/Text.Project2.SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Resumo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/bg_card">
+
+                <TextView
+                    style="@style/Text.Project2.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="Última TMB" />
+
+                <TextView
+                    android:id="@+id/UltimaTmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/accent"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:text="1680" />
+
+                <TextView
+                    style="@style/Text.Project2.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="kcal por dia" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/bg_card">
+
+                <TextView
+                    style="@style/Text.Project2.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="Cálculos feitos" />
+
+                <TextView
+                    android:id="@+id/TotalCalculos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/green"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:text="4" />
+
+                <TextView
+                    style="@style/Text.Project2.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="no histórico" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/UltimoAcesso"
+            style="@style/Text.Project2.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            tools:text="Último acesso: 26/10/2026 às 14:30" />
+
+        <!-- ==========================
+             ATALHOS
+             ========================== -->
+
+        <TextView
+            style="@style/Text.Project2.SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Atalhos" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card">
+
+            <LinearLayout
+                android:id="@+id/AtalhoCalcular"
+                style="@style/Widget.Project2.Row">
+
+                <ImageView
+                    style="@style/Widget.Project2.RowIcon"
+                    android:src="@drawable/ic_calcular"
+                    app:backgroundTint="@color/accent" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Calcular TMB" />
+
+                <ImageView style="@style/Widget.Project2.RowChevron" />
+            </LinearLayout>
+
+            <View style="@style/Widget.Project2.Divider.Inset" />
+
+            <LinearLayout
+                android:id="@+id/AtalhoHistorico"
+                style="@style/Widget.Project2.Row">
+
+                <ImageView
+                    style="@style/Widget.Project2.RowIcon"
+                    android:src="@drawable/ic_historico"
+                    app:backgroundTint="@color/orange" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ver histórico" />
+
+                <ImageView style="@style/Widget.Project2.RowChevron" />
+            </LinearLayout>
+
+            <View style="@style/Widget.Project2.Divider.Inset" />
+
+            <LinearLayout
+                android:id="@+id/AtalhoPerfil"
+                style="@style/Widget.Project2.Row">
+
+                <ImageView
+                    style="@style/Widget.Project2.RowIcon"
+                    android:src="@drawable/ic_perfil"
+                    app:backgroundTint="@color/green" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Meu perfil" />
+
+                <ImageView style="@style/Widget.Project2.RowChevron" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

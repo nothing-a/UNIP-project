@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="@dimen/espaco_menu">
+
+        <TextView
+            style="@style/Text.Project2.LargeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil" />
+
+        <TextView
+            android:id="@+id/Avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_avatar"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:text="SC" />
+
+        <TextView
+            android:id="@+id/Nome"
+            style="@style/Text.Project2.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="22sp"
+            tools:text="Sophia Costa" />
+
+        <!-- ==========================
+             CONTA
+             ========================== -->
+
+        <TextView
+            style="@style/Text.Project2.SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Conta" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card">
+
+            <LinearLayout
+                style="@style/Widget.Project2.Row"
+                android:background="@null"
+                android:clickable="false">
+
+                <ImageView
+                    style="@style/Widget.Project2.RowIcon"
+                    android:src="@drawable/ic_email"
+                    app:backgroundTint="@color/accent" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/Email"
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:gravity="end"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/secondary_label"
+                    tools:text="sophia.costa@email.com" />
+            </LinearLayout>
+
+            <View style="@style/Widget.Project2.Divider.Inset" />
+
+            <LinearLayout
+                style="@style/Widget.Project2.Row"
+                android:background="@null"
+                android:clickable="false">
+
+                <ImageView
+                    style="@style/Widget.Project2.RowIcon"
+                    android:src="@drawable/ic_historico"
+                    app:backgroundTint="@color/orange" />
+
+                <TextView
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Último acesso" />
+
+                <TextView
+                    android:id="@+id/UltimoAcesso"
+                    style="@style/Text.Project2.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:textColor="@color/secondary_label"
+                    android:textSize="15sp"
+                    tools:text="26/10/2026 às 14:30" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ==========================
+             SAIR
+             ========================== -->
+
+        <LinearLayout
+            android:id="@+id/Sair"
+            style="@style/Widget.Project2.Row"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_card"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                style="@style/Widget.Project2.RowIcon"
+                android:src="@drawable/ic_sair"
+                app:backgroundTint="@color/destructive" />
+
+            <TextView
+                style="@style/Text.Project2.Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/destructive"
+                android:text="Sair da conta" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

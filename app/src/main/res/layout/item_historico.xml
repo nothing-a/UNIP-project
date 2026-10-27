@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="88dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="18dp"
+    android:background="@drawable/bg_card_historico"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/label"
+            android:textSize="17sp"
+            tools:text="Feminino" />
+
+        <TextView
+            android:id="@+id/Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/secondary_label"
+            android:textSize="12sp"
+            tools:text="26/10/2026 às 14:30" />
+    </LinearLayout>
+
+    <!-- Divisória entre os dados e o valor -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/separator" />
+
+    <TextView
+        android:id="@+id/Valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/accent"
+        android:textSize="20sp"
+        tools:text="1680 kcal" />
+
+    <ImageView
+        style="@style/Widget.Project2.RowChevron"
+        android:layout_marginStart="8dp" />
+
+</LinearLayout>

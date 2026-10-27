@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Espaço no fim de cada tela para o conteúdo não ficar atrás do menu flutuante -->
+    <dimen name="espaco_menu">136dp</dimen>
+    <dimen name="margem_menu">16dp</dimen>
+    <dimen name="espaco_cartoes">12dp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta inspirada no iOS (modo claro) -->
+    <color name="background">#F2F2F7</color>
+    <color name="card">#FFFFFF</color>
+    <color name="label">#000000</color>
+    <color name="secondary_label">#8E8E93</color>
+    <color name="placeholder">#C4C4C7</color>
+    <color name="separator">#D1D1D6</color>
+    <color name="accent">#007AFF</color>
+    <color name="segment_background">#E3E3E8</color>
+    <color name="segment_selected">#FFFFFF</color>
+    <color name="green">#34C759</color>
+    <color name="orange">#FF9500</color>
+    <color name="destructive">#FF3B30</color>
+    <color name="menu_background">#636366</color>
+    <color name="menu_item">#D1D1D6</color>
+</resources>
